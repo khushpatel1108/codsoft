@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* Reset some default styles to ensure consistency */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set up the overall layout and styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+            min-height: 100vh; /* Ensure the body takes up at least the entire viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        #about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about img {
+            max-width: 250px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #about p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        #skills {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #skills h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        #skills ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        #skills li {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        #projects {
+            padding: 50px 0;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .project img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .project p {
+            padding: 20px;
+        }
+
+        #resume {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #resume h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        #contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 20px;
+            }
+
+            #about img {
+                max-width: 150px;
+            }
+
+            #about p {
+                font-size: 16px;
+            }
+
+            #skills h2 {
+                font-size: 28px;
+            }
+
+            #skills li {
+                font-size: 16px;
+            }
+
+            .project h3 {
+                font-size: 20px;
+            }
+
+            .project p {
+                font-size: 16px;
+            }
+
+            #resume h2 {
+                font-size: 28px;
+            }
+
+            #contact h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <!-- Add your name or logo here -->
+            <h1>Khush Patel</h1>
+            <!-- Optionally, include a brief introduction or tagline -->
+            <p>Web Developer | Aspiring Designer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <p>
+                I am a passionate web developer with a love for designing user-friendly interfaces. I have experience with HTML, CSS, JavaScript, and various web development frameworks.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <!-- List your key skills or areas of expertise -->
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <!-- Showcase samples of your work or projects -->
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Student management system</h3>
+                <p>I created a student result management system for better analysis of students performance using django.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>NBA analysis system for mitaoe</h3>
+                <p>I created this web portal for my collrgr mitaoe for nba result analysis in django.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <!-- Provide a link to download your resume in PDF format -->
+            <h2>Resume</h2>
+            <p>Download my resume <a href="your_resume.pdf" download>here</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <!-- Include your contact information, such as email address and phone number -->
+            <h2>Contact</h2>
+            <p>Email: khush.patel@mitaoe.ac.in</p>
+            <p>Phone: 7020582937</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <!-- Add a copyright notice and any additional links or information -->
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
